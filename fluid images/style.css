@@ -1,0 +1,56 @@
+
+/*sames as doing it with source on HTML
+@media (min width: 601px) and (max-width: 1200px) {
+    .image {
+        background-image: url(./images/image_1200-601.jpg);
+    }
+    
+}*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+
+    
+}
+
+header, main {
+    margin: 1rem auto;
+}
+
+h1{
+    padding: 1rem 2rem;
+    color: aliceblue;
+    text-shadow: 1px 1px 3px black;
+}
+
+@media (max-width:600px){
+    header{
+        border-bottom: 3rem solid yellow;
+    }
+    h1{
+        font-size: 4rem;
+
+    }
+    img {
+        width: 100%;
+    }
+}
+
+@media (min-width:601px) and (max-width:1200px){
+    header{
+        border-bottom: 3rem solid black;
+    }
+    h1{
+        font-size: 5rem;
+
+    }
+    img {
+        width: 60%;
+    }
+}
